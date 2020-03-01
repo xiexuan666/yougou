@@ -1,12 +1,6 @@
 <view class="container">
   <!-- 头部的搜索栏 -->
-  <navigator url="">
-    <view class="search">
-      <view class="search-input">
-        <icon type="search" size="20" /> 搜索
-      </view>
-    </view>
-  </navigator>
+ <search/>
   <!-- 轮播图 -->
   <swiper class="swiper" indicator-dots circular indicator-color="rgba(255,255,255,.3)" indicator-active-color="rgba(255,255,255,1)">
     <block wx:for="{{banners}}" wx:key="index">
@@ -34,7 +28,7 @@
     <view class="floor-content">
       <!-- 左边大图 -->
       <view class="floor-left">
-        <image mode="aspectFill" src="{{itme.product_list[0].image_src}}"></image>
+        <image mode="aspectFill" src="{{item.product_list[0].image_src}}"></image>
       </view>
       <!-- 右边的四个小图 -->
       <view class="floor-right">
