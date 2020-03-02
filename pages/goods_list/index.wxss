@@ -47,3 +47,9 @@ flex-shrink: 0;
 .price{
   color: red;
 }
+.text {
+  padding: 20rpx;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+}

@@ -3,7 +3,7 @@
   <navigator url="">
     <view class="search">
       <view class="search-input">
-        <icon type="search" size="20" /> 小米
+        <icon type="search" size="20" /> {{keyword}}
       </view>
     </view>
   </navigator>
@@ -17,16 +17,26 @@
 
   <!-- 商品列表 -->
   <view class="list">
+  <block wx:for="{{goods}}" wx:key="index">
     <navigator url="" class="goods-list">
-      <image src="https://img11.360buyimg.com/babel/s1180x940_jfs/t1/85181/13/13474/83838/5e58bb88E92e4deab/e9294fb119255a30.jpg.webp">
+      <image src="{{item.goods_small_logo}}">
       </image>
       <view class="goods-list-right">
         <view class="goods-title">
-          包邮【多色可选】口红保湿不脱色滋润型学生款可爱咬唇膏 番茄色
+          {{item.goods_name}}
         </view>
         <view class="price">
-          <view>￥100</view></view>
+          <view>￥{{item.goods_price}}</view></view>
       </view>
     </navigator>
+    </block>
+  </view>
+
+
+
+  <!-- 拖到底部的提示 -->
+  <view class="text">
+  <view wx:if="{{hasMore}}">加载中</view>
+  <view wx:if ="{{!hasMore}}">没有数据了</view>
   </view>
 </view>
