@@ -17,12 +17,15 @@ Page({
     loading:true
   },
   onLoad: function (options) {
+    // keyword是url中的参数
     const { keyword } = options;
     this.setData({
       keyword
     });
+    // 请求商品列表数据
     this.getGoods();
   },
+  // 请求商品列表数据
   getGoods() {
     //如果没有更多了，就不会再请求了
     if (this.data.hasMore == false) {
@@ -65,7 +68,9 @@ Page({
 
   //页面上拉的时候触发
   onReachBottom() {
+     // 需要等到上一次的请求回来了再执行下一页的数据
     if (this.data.loading === false) {
+
       this.setData({
         //每次发送请求的的时候重新设置loagig为正在加载
         loading: true,

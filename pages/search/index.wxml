@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- 搜索栏 -->
+
+  <view class="header">
+    <view class="search">
+      <view class="search-input">
+        <icon type="search" size="20" /> 请输入你想输入的商品
+      </view>
+      <view class="button">
+        取消
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 历史记录 -->
+  <view class="history-header">
+    <view class="history">历史记录</view>
+  </view>
+
+
+  <!-- 历史记录列表 -->
+  <view class="history-list">
+    <text>小米</text>
+    <text>苹果</text>
+    <text>华为</text>
+    <text>电视</text>
+    <text>冰箱</text>
+  </view>
+</view>
