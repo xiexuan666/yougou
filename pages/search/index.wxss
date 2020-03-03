@@ -10,7 +10,23 @@
   height: 60rpx;
   position: relative;
 }
-
+.recommend{
+  position: absolute;
+  left: 0rpx;
+  top: 60rpx;
+  background: #fff;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border: 1px red  solid;
+  height: 50vh;
+  overflow: auto;
+}
+.recommend navigator {
+  line-height: 2;
+  border-bottom: 1px #eee solid;
+  font-size: 14px;
+}
 .search-input {
   flex: 1;
   padding: 0 20rpx;
@@ -44,10 +60,14 @@
 }
 
 .history-list text {
-
   flex-wrap: wrap;
   padding-right: 20px;
   padding: 5px 27px;
   background: #eee;
   margin: 0 0 20rpx 20rpx;
+}
+.history-item{
+  padding: 5px 20px;
+  background: #eee;
+  margin:  0 0 20rpx 20rpx ;
 }
