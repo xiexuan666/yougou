@@ -119,7 +119,7 @@ Page({
   },
 
   //按下回车按钮的事件
-  handleEnten() {
+  handleEnter() {
     
     //每次存储之前先把本地的数据先获取回来
     let arr = wx.getStorageSync("history");
@@ -140,7 +140,7 @@ Page({
 
     //跳转到商品搜索列表页
     wx.redirectTo({
-      url: '/pages/goods_list/index?keyword=' + this.data.inputValue
+      url: "/pages/goods_list/index?keyword= " + this.data.inputValue
     })
   }
 })
