@@ -87,3 +87,48 @@
 .button-color:last-child {
   background: red;
 }
+.contact{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left:0; 
+    top:0;
+    overflow: auto;
+    opacity: 0;
+}
+
+.contact button{
+    height: 100rpx;
+}
+
+
+
+.tab{
+    display: flex;
+    border-top: 10px #eee solid;
+}
+
+.tab-item{
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    
+}
+
+.tab-item.active{
+    background: red;
+    color:#fff;
+}
+
+.attrs{
+    padding: 20rpx;
+}
+
+.attr-item{
+    line-height: 2;
+}
+
+.attr-item text{
+    margin-right: 20rpx;
+}

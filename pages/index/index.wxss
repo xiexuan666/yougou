@@ -1,81 +1,90 @@
-
 .swiper {
   height: 340rpx;
 }
+
 .swiper image {
   width: 750rpx;
   height: 340rpx;
 }
-.menus{
+
+.menus {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20rpx 0;
 }
+
 .menus image {
   width: 128rpx;
   height: 140rpx;
 }
+
 .floor {
   margin-bottom: 20px;
 }
+
 .floor-title {
   width: 100%;
   height: 60rpx;
 }
-.floor-content{
+
+.floor-content {
   display: flex;
   justify-content: space-around;
   padding: 15rpx;
 }
+
 .floor-left {
   margin-right: 12rpx;
 }
+
 .floor-left image {
   width: 232rpx;
-   height: 386rpx;
+  height: 386rpx;
 }
 
-.floor-right{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-} 
-
-
-.floor-right image{
-    width: 233rpx;
-    height: 188rpx;
+.floor-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.floor + .floor .floor-right image{
-    width: 193rpx;
+.floor-right image {
+  width: 233rpx;
+  height: 188rpx;
 }
 
-.floor + .floor .floor-right image:nth-child(3n + 1){
-    width: 273rpx;
+.floor + .floor .floor-right image {
+  width: 193rpx;
 }
-.toTop{
-    width:90rpx;
-    height: 90rpx;
-    border-radius: 50%;
-    background: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 12px;
-    position: fixed;
-    right: 20rpx;
-    bottom:50rpx;
+
+.floor + .floor .floor-right image:nth-child(3n + 1) {
+  width: 273rpx;
 }
-.arrow{
-    width:12px;
-    height:12px;
-    border-left: 1px #333 solid;
-    border-top: 1px #333 solid;
-    transform: rotate(45deg);
-    position: relative;
-    top: 10rpx;
+
+.toTop {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  position: fixed;
+  right: 20rpx;
+  bottom: 50rpx;
 }
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  border-left: 1px #333 solid;
+  border-top: 1px #333 solid;
+  transform: rotate(45deg);
+  position: relative;
+  top: 10rpx;
+}
+
