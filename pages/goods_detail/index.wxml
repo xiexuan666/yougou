@@ -1,0 +1,46 @@
+<view class="container">
+
+  <!-- 轮播图 -->
+  <swiper class="swiper" indicator-dots>
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image mode="aspectFill" src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <!-- 商品信息 -->
+  <view class="goods">
+    <view class="price">￥279:00</view>
+
+    <view class="goods-title">
+      <view class="title">
+        二手99新】三星 Galaxy S8+ （SM-G9550）全视曲面屏手机 虹膜识别 全网通4G 谜夜黑 国行64G
+      </view>
+      <view class="collect">
+        <view class="iconfont icon-shoucang"></view>
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class="text">快递免运费</view>
+  </view>
+
+
+  <!-- 页脚按钮  固定在底部的-->
+  <view class="button">
+
+    <view class="btn">
+      <view class="iconfont icon-kefu"></view>
+      <text>联系客服</text>
+    </view>
+    <view class="btn">
+      <view class="iconfont icon-gouwuche"></view>
+      <text>购物车</text>
+    </view>
+
+    <view class="button-color">加入购物车</view>
+    <view class="button-color">立即购买</view>
+    
+  </view>
+</view>
