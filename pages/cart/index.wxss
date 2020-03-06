@@ -1,1 +1,155 @@
-/* pages/cart/index.wxss */
+.title {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title .phone {
+  display: flex;
+  align-items: center;
+}
+
+.title .phone::after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 1px #999 solid;
+  border-top: 1px #999 solid;
+  transform: rotate(135deg);
+  margin-left: 10px;
+}
+
+.location {
+  padding: 20rpx;
+  padding-top: 0;
+}
+
+.header image {
+  width: 750rpx;
+  height: 15rpx;
+  display: block;
+}
+
+.good-header {
+  border-top: 20rpx #eee solid;
+  padding: 20epx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px #eee solid;
+}
+
+.good-header view {
+  margin-right: 20rpx;
+}
+
+.list {
+  padding-bottom: 120rpx;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 1px #eee solid;
+}
+
+.list-item icon {
+  margin-right: 20rpx;
+}
+
+.list-item  image {
+  width: 160rpx;
+  height: 160rpx;
+  flex-shrink: 0;
+}
+
+.list-right {
+  height: 160rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.character {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.list-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 12px;
+}
+
+.price text {
+  font-size: 12px;
+}
+
+.list-number {
+  display: flex;
+  align-items: center;
+}
+
+.list-number .button {
+  width: 20px;
+  height: 20px;
+  border: 1px #999 solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-number input {
+  width: 36px;
+  text-align: center;
+}
+.total-prices {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  width: 750rpx;
+  height: 100rpx;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  z-index: 9;
+}
+.check-all {
+padding: 20rpx;
+display: flex;
+align-items: center;
+}
+.check-all icon {
+  margin-right: 20rpx;
+}
+.total text {
+  color: red;
+}
+.total text text {
+  font-size: 12px;
+}
+.freight {
+  color: #999;
+  font-size: 12px;
+}
+.button-btn {
+  width: 30%;
+  height: 100%;
+  background: #ff2d4a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
